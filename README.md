@@ -12,3 +12,6 @@ This repository is a list of features you can __freely add__ to your websites.
 **Future GIF place**
 
 ### More coming soon... 🚪
+
+Feel free to watch the repo to get notified of future features 😉
+<br>You can also star ⭐ this repo to give me some motivation ✊
