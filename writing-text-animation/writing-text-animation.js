@@ -1,3 +1,8 @@
+/*
+ * -- FREE-TO-USE FEATURE FROM
+ * -- https://github.com/Maximus220/website-features
+ */
+
 var items;
 
 var animation = function(element, holdTime, textList, speed, delCoef) {
