@@ -28,7 +28,11 @@ animation.prototype.tick = function() {
   }else{
     this.curText = writtingText.substring(0, this.curText.length +1);
   }
-  this.element.innerHTML = this.curText;
+  if(this.element.id!=null){
+    this.element.innerHTML = '<span id="writing-text-animation-' + this.element.id + '">' + this.curText+ '</span>';
+  }else{
+    this.element.innerHTML = this.curText;
+  }
 
   if(!this.isDeleting && this.curText === writtingText){
     time=this.holdTime;
@@ -46,7 +50,7 @@ animation.prototype.tick = function() {
 };
 
 window.onload = function() {
-  items = document.getElementsByClassName("textAnimation");
+  items = document.getElementsByClassName("writing-text-animation");
   for(let x=0;x<items.length;x++){
     new animation(items[x], items[x].dataset.time, items[x].dataset.text, items[x].dataset.speed, items[x].dataset.delcoef);
   }

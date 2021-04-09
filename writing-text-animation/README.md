@@ -16,16 +16,19 @@ Then :
   * `data-speed` with the writing speed you want. The higher that value is, the slower the text will spawn (tip : vary the value between 15 and 25). *(Default : 20)*
   * `data-delcoef` with the deletion coefficient you want to use. That coefficient will divide the `data-speed` and give the deletion speed. The higher the coefficient is, the faster the text deletion speed will be. *(Default : 2)*
   * `data-text` with a JSON formatted list of texts you want to display (e.g. `["My first text", "My second cool text"]`).
+* **If you want to interact with the text,** you can add an ID to the span and interact with the ID `writing-text-animation-YOURID` in your code.
 
 ### Parameters ⚙️
 
-``class="writing-text-animation"`` : That parameter is essential, it makes the JS file find elements you want to use the animation with.
+``class="writing-text-animation"`` : This parameter is essential, it makes the JS file find elements you want to use the animation with.
 
-``data-time="2000"`` : That parameter corresponds to the amount of ms the text will stay *(default value : 2000)*. ⚠️ Value is in millisecond, 1000ms = 1s ⚠️
+``id="mySpanId"`` : This parameter is optional, it gives the text and ID if you want to modify the text's style. The ID to interact directly with the text is ``writing-text-animation-mySpanId``
 
-``data-speed="20"`` : That parameter corresponds to the coefficient of variation of the writing speed *(default value : 20)*. It is recommended to use values around 15 - 25.
+``data-time="2000"`` : This parameter corresponds to the amount of ms the text will stay *(default value : 2000)*. ⚠️ Value is in millisecond, 1000ms = 1s ⚠️
 
-``data-delcoef="2"`` : That parameter corresponds to the deletion coefficient used on the initial speed *(default value : 2)*.<br>*(E.g. if the deletion coefficient is 2, the initial speed will be divided by 2, and letters will be deleted 2 times faster.)*
+``data-speed="20"`` : This parameter corresponds to the coefficient of variation of the writing speed *(default value : 20)*. It is recommended to use values around 15 - 25.
+
+``data-delcoef="2"`` : This parameter corresponds to the deletion coefficient used on the initial speed *(default value : 2)*.<br>*(E.g. if the deletion coefficient is 2, the initial speed will be divided by 2, and letters will be deleted 2 times faster.)*
 
 ``data-text='["My first text", "My second cool text"]'`` : List of texts to display.
 
@@ -34,6 +37,13 @@ Then :
 Here's a little template you can try :
 ```
 <span id="mySpanId" class="writing-text-animation" data-time="2000" data-speed="20" data-delcoef="2" data-text='["My first text", "My second cool text"]'></span>
+```
+Via that template, you can interact with the ID `writing-text-animation-mySpanId` in your code to, for example, change the font-size.
+<br>E.g.
+```
+#writing-text-animation-mySpanId{
+  font-size: 2em;
+}
 ```
 
 ## Tip 🏷️
