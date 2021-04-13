@@ -1,6 +1,8 @@
 # Writing text animation ✏️
 
-**Future GIF place**
+**Demo :**
+
+![Demo01](demo/demo1.gif)
 
 ## How to use 📋
 

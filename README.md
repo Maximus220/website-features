@@ -9,7 +9,9 @@ This repository is a list of features you can __freely add__ to your websites.
 
 [Writing text animation](/writing-text-animation/) is an animation you can simply add by only using a single `<span>` and configure with a simple-to-understand list of useful parameters.
 
-**Future GIF place**
+**Demo :**
+
+![Demo01](writing-text-animation/demo/demo1.gif)
 
 ### More coming soon... 🚪
 
